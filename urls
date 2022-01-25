@@ -1,0 +1,56 @@
+"query:recent articles:age between 0:3"
+#--------------YOUTUBE----------------#
+"query:youtube:rssurl =~ \"https\:\/\/www\.youtube\.com.*\""
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO2WJZKQoDW4Te6NHx4KfTg "~GeekyRanjit"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCBKhdILeDie8iLkap216g7g "~InDepthTechReviews"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS261lQDXjMvc8Jck-2CQEg "~Gyan Therapy"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCc-QqWya7dMj_-yOB4lZgiQ "~PokeChatter"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCUZ6YOewJDDsWvzuxYjiHqw "~ThePokeRaf"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCEPL07qzVsOcHd3sMUws65g "~Trakin Tech"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCZkeuP-XZnnWzID8vbBdoEQ "~Ruffled Rowlit"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFctpiB_Hnlk3ejWfHqSm6Q "~Pokemon Offical YT"
+
+## smartphones and custom roms
+"query:miatoll updates:rssurl =~ \"https\:\/\/thecustomrom\.com\/category\/redmi\-note\-9\-pro\-9s\-max\-poco\-m2\-pro\/feed\/\" or rssurl =~ \"miatoll|gram\"
+# or title =~ \"miatoll|gram\""
+https://www.xda-developers.com/feed/
+https://thecustomrom.com/category/redmi-note-9-pro-9s-max-poco-m2-pro/feed/ "~miatoll"
+https://blog.arrowos.net/feed/ "~ArrowOS"
+https://sourceforge.net/projects/crdroid/rss?path=/miatoll "!crdroid miatoll"
+https://blog.droidontime.com/index.xml "~DotOS"
+
+
+## software updates
+"query:foss\ updates:rssurl =~ \".*github\.com.*|.*newpipe.*|.*newsboat.*|.*mozilla.*|.*citra.*|.*simplelogin.*\""
+https://github.com/florisboard/florisboard/releases.atom "! florisboard"
+https://github.com/tareksander/termux-gui/releases.atom "! termux gui"
+https://github.com/skyline-emu/skyline/releases.atom "!skyline"
+https://github.com/weihuoya/citra/releases.atom "!citra mmj"
+https://github.com/Gamer64ytb/Citra-Enhanced/releases.atom "!citra enchanced"
+https://citra-emu.org/index.xml "!citra blogs"
+https://github.com/citra-emu/citra-android/releases.atom "! citra android"
+http://melonds.kuribo64.net/rss.php "!melonDS"
+https://newsboat.org/news.atom "! newsboat"
+https://github.com/pystardust/ani-cli/commits/master.atom "!ani-cli"
+https://newpipe.net/blog/feeds/news.rss "! Newpipe blogs"
+https://swordfish90.github.io/feed.xml "! lemuroid blogs"
+https://blog.mozilla.org/security/feed/ "! Mozilla security blog"
+https://simplelogin.io/blog/index.xml "! simplelogin"
+https://github.com/searx/searx/releases.atom "! searx"
+https://feed.ctrl.blog/latest.atom
+## nitter
+"query:nitter:rssurl =~ \"\.*nitter.*\""
+https://nitter.net/lightplatinumds/rss "!pokemon light platinum"
+https://nitter.net/The_HatedOne_/rss "!the hated one"
+https://nitter.net/dotosofficial/rss "!DotOS"
+
+
+## others
+https://signal.org/blog/rss.xml "signal news"
+http://twrp.me/feed.xml "twrp"
+https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches "~data breaches"
+https://linuxhandbook.com/rss/
+https://github.com/StevenBlack/hosts/releases.atom "!~StevenBlack hosts"
+https://myanimelist.net/rss/news.xml "~MyAnimeList News"
+
+

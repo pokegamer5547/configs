@@ -1,0 +1,59 @@
+#---------------MAIN-CONF--------------#
+feedlist-title-format "%?F?Feeds&Your feeds? (%u unread, %t total)%?F? matching filter `%F'&?%?T? - tag `%T'&?"
+articlelist-title-format "'%T' (%u unread, %t total)%?F? matching filter `%F'&? - %U"
+articlelist-format "%4i %f %D %?T?|%-17T|  ?%t"
+reset-unread-on-update "*"
+ignore-mode "display"
+notify-program "/data/data/com.termux/files/home/scripts/./noto.sh
+notify-screen yes
+# run-on-startup toggle-show-read-feeds
+goto-first-unread yes
+prepopulate-query-feeds yes
+reload-time 60
+reload-threads 16
+download-retries 5
+download-timeout 60
+browser "termux-open %u"
+bookmark-cmd "/data/data/com.termux/files/usr/bin/buku"
+
+#-------------KEY-BINDINGS-------------#
+unbind-key j
+unbind-key k
+unbind-key ENTER
+unbind-key q
+unbind-key Q
+unbind-key r
+unbind-key R
+unbind-key UP
+unbind-key DOWN
+bind-key j down
+bind-key k up
+bind-key i open
+bind-key BACKSPACE quit
+## N = mark unread
+
+#-------------THEME-------------------#
+# color listnormal black color225
+# color article black color225
+# color background black color225
+# color info black color212 protect
+# color listfocus black color170
+# color listnormal_unread black color206
+# color listfocus_unread black color200
+# color end-of-text-marker color225 color225
+
+
+#------------IGNORE-LIST---------------#
+## trakin tech news
+ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCEPL07qzVsOcHd3sMUws65g" "title!~ \"\.*#TTN.*\"" 
+
+## pokechatter
+ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCc-QqWya7dMj_-yOB4lZgiQ" "title=~ \"\Brilliant[[:blank:]]Diamond|Shining[[:blank:]]Pearl\""
+
+## pokemon official youtube channel
+ignore-article "https://www.youtube.com/feeds/videos.xml?channel_id=UCFctpiB_Hnlk3ejWfHqSm6Q" "title=~ \"\.*[UK].*\""
+
+## xda developers
+ignore-article "https://www.xda-developers.com/feed/" "title=~ \"\MacOS|Macbook|Apple|AirPods|iphone|ipad|Nokia|galaxy|YouTube[[:blank:]]TV|Stadia|Google[[:blank:]]tv|Google[[:blank:]]Photos|google[[:blank:]]assistant|google[[:blank:]]home|google[[:blank:]]calendar|siri|alexa|chromebook|ios|LG|OPPO[[:blank:]]Find|fallout|cyberpink|T\-Mobile|honor|harmony|Razer[[:blank:]]Blade|unboxing\""
+
+# ignore-article ""https://www.xda-developers.com/feed" "title=~ \"\MacOS|( title=~ "Google"
